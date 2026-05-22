@@ -1,32 +1,243 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>My Portfolio</title>
+  <title>Rachel Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body style="font-family: Arial; text-align:center; padding:40px;">
+<body>
 
+  <div class="cursor"></div>
+  
+  <div id="particles-js"></div>
+
+<nav>
+  <h2 class="logo">Portfolio</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <img src="images/profileImage.jpg" class="profile-img" alt="profile img">
   <h1>Rachel Francis</h1>
 
-  <h2>Web Developer</h2>
-
-  <p>
-    Welcome to my portfolio website.
+  <p> <span class="typing"></span>
   </p>
 
-  <h3>Skills</h3>
+  <a href="#projects">
+    <button>View Projects</button>
+  </a>
+  <a href="Rachel_Resume_21_01_26.pdf">
+    <button>Download Resume</button>
+  </a>
+  <div class="social-icons">
+    <a href="https://github.com/rachels9999" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/rachels9999/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="mailto:rachels9999@gmail.com">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </div>
 
+
+</header>
+
+<section class="about hidden" id="about">
+  <h2>About Me</h2>
   <p>
-    HTML | CSS | JavaScript | MERN Stack
+    Enthusiastic B.Tech Electronics and Communication Engineering graduate with a strong interest in web development.
+    Currently
+    developing expertise in MEARN Stack including React,MongoDB, Node.js,Express through hands-on projects and
+    continuous learning.
+    Looking for an opportunity to apply my technical skills in a dynamic work environment and contribute to real-world
+    projects while
+    continuously enhancing technical expertise.
   </p>
+</section>
 
-  <h3>Projects</h3>
+<section class="skills hidden" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill-category">
+      <h3>Frontend</h3>
+      <div class="skill">
+        <i class="fa-brands fa-html5"></i>
+        HTML
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-css3-alt"></i>
+        CSS
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-js"></i>
+        JavaScript</div>
+      <div class="skill">
+        <i class="fa-brands fa-react"></i>
+        React</div>
+    </div>
+    <div class="skill-category">
+      <h3>Backend</h3>
+      <div class="skill">
+        <i class="fa-brands fa-node-js"></i>
+        Node.js</div>
+      <div class="skill">
+        <i class="fa-solid fa-server"></i>
+        Express.js</div>
+      <div class="skill">
+        <i class="fa-solid fa-database"></i>
+        MongoDB</div>
+    </div>
+    <div class="skill-category">
+      <h3>Tools</h3>
+      <div class="skill">
+        <i class="fa-brands fa-git-alt"></i>
+        Git</div>
+      <div class="skill">
+        <i class="fa-brands fa-github"></i>
+        GitHub</div>
+      <div class="skill">
+        <i class="fa-solid fa-code"></i>
+        VS Code</div>
 
-  <p>
-    Portfolio Website <br>
-    Todo App <br>
-    Weather App
-  </p>
+    </div>
+  </div>
+  
+</section>
+
+<section id="projects" class="hidden">
+  <h2>Projects</h2>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <img src="images/SakeAndLadder.png" class="project-img" alt="Chit-Chat">
+      <h3>Snake and Ladder</h3>
+      <div class="project-links">
+        <a href="https://snakeandladderonly1player.netlify.app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/rachels9999/Snake-and-Ladder-1-player.git" target="_blank">GitHub</a>
+      </div>
+
+    </div>
+    <div class="project-card">
+      <img src="images/SpeedCart.png" class="project-img" alt="SpeedCart">
+      <h3>Speed Cart</h3>
+      <div class="project-links">
+        <a href="https://speed-cart-redux-2026.netlify.app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/rachels9999/Speed-Cart.git" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/Chit-Chat.png" class="project-img" alt="Chit-Chat">
+      <h3>Chit Chat</h3>
+      <div class="project-links">
+        <a href="https://chit-chat2025.netlify.app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/rachels9999/chit-chat.git" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/Portfolio.png" class="project-img" alt="Portfolio">
+      <h3>Portfolio</h3>
+      <div class="project-links">
+        <a href="https://rachel-firstportfolio.netlify.app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/rachels9999/Rachel_FirstPortfolio.git" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/BMIcalculator.png" class="project-img" alt="BMI">
+      <h3>BMI Calculator</h3>
+      <div class="project-links">
+        <a href="https://bmi-calculator-reader.netlify.app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/rachels9999/BMICalculator.git" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+
+<section id="contact" class="hidden">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<!----Typed.js  Typing Animation------>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".typing", {
+    strings: [
+      "Web Developer",
+      "Frontend Developer",
+      "Web Designer"
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+
+  });
+</script>
+
+
+<!---- Background Particles------>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js",{
+    particles: {
+      number: {
+        value:80
+      },
+      size: {
+        value: 3
+      },
+      move: {
+        speed: 2
+      },
+      line_liked: {
+        enable:true
+      }
+    }
+  });
+</script>
+
+<!------------>
+<script>
+  const hiddenElements = document.querySelectorAll(".hidden");
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("show");
+      }
+    });
+  });
+  hiddenElements.forEach((e1)=>
+  observer.observe(e1))
+</script>
+
+
+<!-----Cusom Cursor-------->
+<script>
+  const cursor = document.querySelector(".cursor");
+  document.addEventListener("mousemove",(e)=>{
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px"
+  });
+</script>
+
 
 </body>
+
 </html>
